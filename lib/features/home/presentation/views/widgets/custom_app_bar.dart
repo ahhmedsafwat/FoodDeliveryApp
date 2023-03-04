@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery_app/core/utils/widgets/big_text.dart';
+import 'package:food_delivery_app/core/utils/widgets/small_text.dart';
 
 import '../../../../../core/utils/colors.dart';
 
@@ -11,9 +13,20 @@ class CustomAppBar extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Column(
-          children: const [
-            Text('Country'),
-            Text('City'),
+          children: [
+            const BigText(
+              text: 'Egypt',
+              color: AppColors.mainColor,
+            ),
+            Row(children: const [
+              SmallText(
+                text: 'Mansoura',
+                color: Colors.black54,
+              ),
+              Icon(
+                Icons.arrow_drop_down,
+              )
+            ])
           ],
         ),
         Center(

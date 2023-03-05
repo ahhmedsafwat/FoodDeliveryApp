@@ -1,6 +1,7 @@
-import 'dart:ffi';
-
+import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
+import 'package:food_delivery_app/core/utils/colors.dart';
+import 'package:food_delivery_app/core/utils/dimension.dart';
 
 import 'food_cards.dart';
 
@@ -34,21 +35,36 @@ class _FoodCardsPageViewState extends State<FoodCardsPageView> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 320,
-      child: PageView.builder(
-        controller: pageController,
-        physics: const BouncingScrollPhysics(),
-        itemCount: 5,
-        itemBuilder: (context, position) {
-          return Transform(
-            transform: scalingScroller(position),
-            child: FoodCards(
-              index: position,
-            ),
-          );
-        },
-      ),
+    return Column(
+      children: [
+        Container(
+          height: Dimensions.pageView,
+          child: PageView.builder(
+            controller: pageController,
+            physics: const BouncingScrollPhysics(),
+            itemCount: 8,
+            itemBuilder: (context, position) {
+              return Transform(
+                transform: scalingScroller(position),
+                child: FoodCards(
+                  index: position,
+                ),
+              );
+            },
+          ),
+        ),
+        DotsIndicator(
+          dotsCount: 8,
+          position: _currPageValue,
+          decorator: DotsDecorator(
+            activeColor: AppColors.mainColor,
+            size: const Size.square(9.0),
+            activeSize: const Size(18.0, 9.0),
+            activeShape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(5.0)),
+          ),
+        )
+      ],
     );
   }
 

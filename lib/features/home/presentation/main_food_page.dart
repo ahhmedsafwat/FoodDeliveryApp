@@ -6,8 +6,6 @@ class MainFoodPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(
-      child: Scaffold(body: FoodPageBody()),
-    );
+    return Scaffold(body: FoodPageBody());
   }
 }

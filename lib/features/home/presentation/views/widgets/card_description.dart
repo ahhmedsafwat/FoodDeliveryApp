@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/core/utils/colors.dart';
+import 'package:food_delivery_app/core/utils/dimension.dart';
 import 'package:food_delivery_app/core/utils/widgets/big_text.dart';
 import 'package:food_delivery_app/features/home/presentation/views/widgets/rating.dart';
 import '../../../../../core/utils/widgets/icon_and_text.dart';
@@ -12,10 +13,13 @@ class CardsDescription extends StatelessWidget {
     return Align(
       alignment: Alignment.bottomCenter,
       child: Container(
-        height: 120,
-        margin: const EdgeInsets.only(left: 30, right: 30, bottom: 30),
+        height: Dimensions.pageViewTextContainer,
+        margin: EdgeInsets.only(
+            left: Dimensions.width30,
+            right: Dimensions.width30,
+            bottom: Dimensions.height30),
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
+          borderRadius: BorderRadius.circular(Dimensions.radius20),
           color: Colors.white,
           boxShadow: const [
             BoxShadow(
@@ -34,16 +38,15 @@ class CardsDescription extends StatelessWidget {
           ],
         ),
         child: Container(
-            padding: const EdgeInsets.only(top: 10, left: 15, right: 15),
+            padding:
+                EdgeInsets.only(top: Dimensions.height15, left: 15, right: 15),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const BigText(text: 'Chinese Side'),
-                const SizedBox(height: 10),
+                SizedBox(height: Dimensions.height10),
                 const Rating(),
-                const SizedBox(
-                  height: 20,
-                ),
+                SizedBox(height: Dimensions.height20),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: const [

@@ -25,6 +25,7 @@ class CustomAppBar extends StatelessWidget {
               ),
               Icon(
                 Icons.arrow_drop_down,
+                size: 18,
               )
             ])
           ],

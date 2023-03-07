@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/core/utils/dimension.dart';
+import 'package:food_delivery_app/core/widgets/app_image.dart';
 import 'package:food_delivery_app/features/FoodDetails/presentation/view/widgets/app_icon.dart';
 
 import '../../../../../core/widgets/big_text.dart';
@@ -14,6 +15,14 @@ class FoodDetailsBody extends StatelessWidget {
     return Stack(
       children: [
         Positioned(
+            left: 0,
+            right: 0,
+            child: AppImage(
+              img: 'assets/image/food3.jpg',
+              width: double.infinity,
+              height: Dimensions.foodDetailsImgSize,
+            )),
+        Positioned(
           top: Dimensions.height45,
           left: Dimensions.width20,
           right: Dimensions.width20,
@@ -27,20 +36,6 @@ class FoodDetailsBody extends StatelessWidget {
                 icon: Icons.shopping_cart_outlined,
               )
             ],
-          ),
-        ),
-        Positioned(
-          left: 0,
-          right: 0,
-          child: Container(
-            width: double.infinity,
-            height: Dimensions.foodDetailsImgSize,
-            decoration: const BoxDecoration(
-              image: DecorationImage(
-                fit: BoxFit.cover,
-                image: AssetImage('assets/image/food2.jpg'),
-              ),
-            ),
           ),
         ),
         Positioned(

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'package:food_delivery_app/features/home/presentation/views/widgets/card_description.dart';
-
+import 'package:food_delivery_app/core/widgets/app_image.dart';
 import '../../../../../core/utils/dimension.dart';
 import '../../../../../core/widgets/big_text.dart';
 import '../../../../../core/widgets/order_information.dart';
@@ -18,15 +16,10 @@ class FoodListViewItem extends StatelessWidget {
       margin: EdgeInsets.symmetric(horizontal: Dimensions.width30),
       child: Row(
         children: [
-          Container(
+          AppImage(
+            img: 'assets/image/food4.jpg',
             height: Dimensions.listViewImgSize,
             width: Dimensions.listViewImgSize,
-            decoration: BoxDecoration(
-                color: Colors.white24,
-                image: const DecorationImage(
-                    image: AssetImage('assets/image/food5.jpg'),
-                    fit: BoxFit.cover),
-                borderRadius: BorderRadius.circular(Dimensions.radius20)),
           ),
           Expanded(
             child: Container(

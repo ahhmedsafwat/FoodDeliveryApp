@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery_app/core/utils/colors.dart';
 import 'package:food_delivery_app/core/utils/dimension.dart';
-import 'package:food_delivery_app/core/utils/widgets/big_text.dart';
-import 'package:food_delivery_app/core/utils/widgets/small_text.dart';
 import 'package:food_delivery_app/features/home/presentation/views/widgets/popular_text_section.dart';
-
 import 'custom_app_bar.dart';
 import 'food_cards_pageview.dart';
+import 'food_listview.dart';
 
 class FoodPageBody extends StatelessWidget {
   const FoodPageBody({super.key});
@@ -22,48 +19,26 @@ class FoodPageBody extends StatelessWidget {
           child: const CustomAppBar(),
         ),
       ),
-      const FoodCardsPageView(),
-      SizedBox(height: Dimensions.height30),
-      const PopularTextSecion(),
-      Expanded(child: FoodListView()),
+      const CustomScrollableBody()
     ]);
   }
 }
 
-class FoodListView extends StatelessWidget {
-  const FoodListView({super.key});
+class CustomScrollableBody extends StatelessWidget {
+  const CustomScrollableBody({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      itemCount: 10,
-      itemBuilder: (context, index) {
-        return FoodListViewItem();
-      },
-    );
-  }
-}
-
-class FoodListViewItem extends StatelessWidget {
-  const FoodListViewItem({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.symmetric(horizontal: Dimensions.width30),
-      child: Row(children: [
-        Container(
-          width: Dimensions.width45,
-          height: Dimensions.height45,
-          decoration: BoxDecoration(
-              color: Colors.white24,
-              image:
-                  DecorationImage(image: AssetImage('assets/image/food5.jpg')),
-              borderRadius: BorderRadius.circular(Dimensions.radius20)),
-        )
-      ]),
+    return Expanded(
+      child: SingleChildScrollView(
+        child: Column(children: [
+          const FoodCardsPageView(),
+          SizedBox(height: Dimensions.height30),
+          const PopularTextSecion(),
+          SizedBox(height: Dimensions.height15),
+          FoodListView(),
+        ]),
+      ),
     );
   }
 }

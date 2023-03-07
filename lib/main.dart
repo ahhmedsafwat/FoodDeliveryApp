@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'features/home/presentation/main_food_page.dart';
+import 'features/home/presentation/food_page.dart';
 
 void main(List<String> args) {
   runApp(const FoodDeliveryApp());

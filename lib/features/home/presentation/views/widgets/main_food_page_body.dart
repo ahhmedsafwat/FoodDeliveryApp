@@ -36,7 +36,7 @@ class CustomScrollableBody extends StatelessWidget {
           SizedBox(height: Dimensions.height30),
           const PopularTextSecion(),
           SizedBox(height: Dimensions.height15),
-          FoodListView(),
+          const FoodListView(),
         ]),
       ),
     );

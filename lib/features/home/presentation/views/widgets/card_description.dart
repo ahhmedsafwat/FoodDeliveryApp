@@ -4,6 +4,7 @@ import 'package:food_delivery_app/core/utils/dimension.dart';
 import 'package:food_delivery_app/core/utils/widgets/big_text.dart';
 import 'package:food_delivery_app/features/home/presentation/views/widgets/rating.dart';
 import '../../../../../core/utils/widgets/icon_and_text.dart';
+import 'order_information.dart';
 
 class CardsDescription extends StatelessWidget {
   const CardsDescription({super.key});
@@ -47,24 +48,7 @@ class CardsDescription extends StatelessWidget {
                 SizedBox(height: Dimensions.height10),
                 const Rating(),
                 SizedBox(height: Dimensions.height20),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: const [
-                    IconAndText(
-                      icon: Icons.circle_sharp,
-                      iconColor: AppColors.iconColor1,
-                      text: 'Normal',
-                    ),
-                    IconAndText(
-                        icon: Icons.location_on,
-                        iconColor: AppColors.mainColor,
-                        text: '1.7km'),
-                    IconAndText(
-                        icon: Icons.watch_later_outlined,
-                        iconColor: AppColors.iconColor2,
-                        text: '12 min')
-                  ],
-                )
+                const OrderIformation()
                 // IconAndText(icon: icon, color: color, text: text, iconColor: iconColor)
               ],
             )),

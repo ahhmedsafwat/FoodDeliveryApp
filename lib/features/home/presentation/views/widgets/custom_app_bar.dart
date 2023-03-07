@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/core/utils/dimension.dart';
-import 'package:food_delivery_app/core/utils/widgets/big_text.dart';
-import 'package:food_delivery_app/core/utils/widgets/small_text.dart';
-
 import '../../../../../core/utils/colors.dart';
+import '../../../../../core/widgets/big_text.dart';
+import '../../../../../core/widgets/small_text.dart';
 
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({super.key});
@@ -43,7 +42,7 @@ class CustomAppBar extends StatelessWidget {
             child: Icon(
               Icons.search,
               color: Colors.white,
-              size: Dimensions.iconSize,
+              size: Dimensions.iconSize24,
             ),
           ),
         ),

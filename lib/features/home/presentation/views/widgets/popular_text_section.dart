@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../core/utils/dimension.dart';
-import '../../../../../core/utils/widgets/big_text.dart';
-import '../../../../../core/utils/widgets/small_text.dart';
+import '../../../../../core/widgets/big_text.dart';
+import '../../../../../core/widgets/small_text.dart';
 
 class PopularTextSecion extends StatelessWidget {
   const PopularTextSecion({

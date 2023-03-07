@@ -27,10 +27,14 @@ class Dimensions {
   static double radius30 = screenHeight / 28.13;
 
   //icon size
-  static double iconSize = screenHeight / 35.17;
+  static double iconSize24 = screenHeight / 35.17;
+  static double iconSize16 = screenHeight / 52.75;
 
   //list view size
   static double listViewImgSize = screenWidth / 3.25;
   static double listViewTextContianerSize = screenWidth / 3.9;
+
+  //food details
+  static double foodDetailsImgSize = screenHeight / 2.41;
 }
 // 844

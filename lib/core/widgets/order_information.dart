@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../core/utils/colors.dart';
-import '../../../../../core/utils/widgets/icon_and_text.dart';
+import '../utils/colors.dart';
+import 'icon_and_text.dart';
 
 class OrderIformation extends StatelessWidget {
   const OrderIformation({

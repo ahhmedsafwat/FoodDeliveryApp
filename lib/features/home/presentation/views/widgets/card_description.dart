@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/core/utils/colors.dart';
 import 'package:food_delivery_app/core/utils/dimension.dart';
-import 'package:food_delivery_app/core/utils/widgets/big_text.dart';
+
 import 'package:food_delivery_app/features/home/presentation/views/widgets/rating.dart';
-import '../../../../../core/utils/widgets/icon_and_text.dart';
-import 'order_information.dart';
+
+import '../../../../../core/widgets/big_text.dart';
+import '../../../../../core/widgets/order_information.dart';
 
 class CardsDescription extends StatelessWidget {
   const CardsDescription({super.key});

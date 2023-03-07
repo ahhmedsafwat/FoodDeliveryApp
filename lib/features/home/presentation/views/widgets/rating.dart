@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../core/utils/colors.dart';
-import '../../../../../core/utils/widgets/small_text.dart';
+import '../../../../../core/widgets/small_text.dart';
 
 class Rating extends StatelessWidget {
   const Rating({

@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery_app/core/utils/widgets/big_text.dart';
-import 'package:food_delivery_app/core/utils/widgets/small_text.dart';
+
 import 'package:food_delivery_app/features/home/presentation/views/widgets/card_description.dart';
 
 import '../../../../../core/utils/dimension.dart';
-import 'order_information.dart';
+import '../../../../../core/widgets/big_text.dart';
+import '../../../../../core/widgets/order_information.dart';
+import '../../../../../core/widgets/small_text.dart';
 
 class FoodListViewItem extends StatelessWidget {
   const FoodListViewItem({

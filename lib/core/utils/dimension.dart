@@ -39,5 +39,8 @@ class Dimensions {
 
   //food details
   static double foodDetailsImgSize = screenHeight / 2.41;
+
+  //bottom height
+  static double bottomHeightBar = screenHeight / 6.8;
 }
 // 844

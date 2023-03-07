@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:food_delivery_app/core/utils/dimension.dart';
 import 'package:food_delivery_app/core/widgets/app_image.dart';
 import 'package:food_delivery_app/features/FoodDetails/presentation/view/widgets/app_icon.dart';
-
 import '../../../../../core/widgets/big_text.dart';
 import '../../../../../core/widgets/order_information.dart';
 import '../../../../home/presentation/views/widgets/rating.dart';
@@ -60,7 +59,9 @@ class FoodDetailsBody extends StatelessWidget {
                   SizedBox(height: Dimensions.height10),
                   const Rating(),
                   SizedBox(height: Dimensions.height20),
-                  const OrderIformation()
+                  const OrderIformation(),
+                  SizedBox(height: Dimensions.height20),
+                  const BigText(text: 'Introduce'),
                 ],
               ),
             )),

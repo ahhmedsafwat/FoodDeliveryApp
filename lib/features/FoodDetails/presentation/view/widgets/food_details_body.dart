@@ -5,6 +5,7 @@ import 'package:food_delivery_app/features/FoodDetails/presentation/view/widgets
 import '../../../../../core/widgets/big_text.dart';
 import '../../../../../core/widgets/order_information.dart';
 import '../../../../home/presentation/views/widgets/rating.dart';
+import 'expendable_text.dart';
 
 class FoodDetailsBody extends StatelessWidget {
   const FoodDetailsBody({super.key});
@@ -62,6 +63,14 @@ class FoodDetailsBody extends StatelessWidget {
                   const OrderIformation(),
                   SizedBox(height: Dimensions.height20),
                   const BigText(text: 'Introduce'),
+                  SizedBox(height: Dimensions.height20),
+                  const Expanded(
+                    child: SingleChildScrollView(
+                      child: ExpandableText(
+                          text:
+                              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quisque egesta. ut labore et dolore magna aliqua. Quisque egesta. ut labore et dolore magna aliqua. Quisque egesta. ut labore et dolore magna aliqua. Quisque egesta.'),
+                    ),
+                  )
                 ],
               ),
             )),

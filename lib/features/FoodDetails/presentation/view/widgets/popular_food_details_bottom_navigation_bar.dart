@@ -4,8 +4,8 @@ import '../../../../../core/utils/colors.dart';
 import '../../../../../core/utils/dimension.dart';
 import '../../../../../core/widgets/big_text.dart';
 
-class FoodDetailsBottomNavigationBar extends StatelessWidget {
-  const FoodDetailsBottomNavigationBar({
+class PopularFoodDetailsBottomNavigationBar extends StatelessWidget {
+  const PopularFoodDetailsBottomNavigationBar({
     super.key,
   });
 

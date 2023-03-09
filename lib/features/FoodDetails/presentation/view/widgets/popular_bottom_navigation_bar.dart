@@ -4,10 +4,10 @@ import 'package:food_delivery_app/core/utils/dimension.dart';
 import 'package:food_delivery_app/core/widgets/big_text.dart';
 import 'package:food_delivery_app/features/FoodDetails/presentation/view/widgets/app_icon.dart';
 
-import 'food_details_bottom_navigation_bar.dart';
+import 'popular_food_details_bottom_navigation_bar.dart';
 
-class PopularBottomNavigationBar extends StatelessWidget {
-  const PopularBottomNavigationBar({
+class RecommendedBottomNavigationBar extends StatelessWidget {
+  const RecommendedBottomNavigationBar({
     super.key,
   });
 

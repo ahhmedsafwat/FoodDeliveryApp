@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery_app/features/FoodDetails/presentation/view/widgets/popular_bottom_navigation_bar.dart';
 import 'package:food_delivery_app/features/FoodDetails/presentation/view/widgets/popular_food_details_body.dart';
 
 class PopularFoodDetails extends StatelessWidget {
@@ -8,6 +9,7 @@ class PopularFoodDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: PopularFoodDetailsBody(),
+      bottomNavigationBar: PopularBottomNavigationBar(),
     );
   }
 }

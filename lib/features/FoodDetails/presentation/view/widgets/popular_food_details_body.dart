@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery_app/core/utils/colors.dart';
 import 'package:food_delivery_app/core/utils/dimension.dart';
-import 'package:food_delivery_app/core/widgets/big_text.dart';
-import 'package:food_delivery_app/features/FoodDetails/presentation/view/widgets/app_icon.dart';
-import 'package:get/get_connect/http/src/utils/utils.dart';
 
 import 'cusotm_sliver_appbar.dart';
 import 'expendable_text.dart';

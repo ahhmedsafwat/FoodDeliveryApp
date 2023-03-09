@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/core/utils/colors.dart';
 import 'package:food_delivery_app/core/utils/dimension.dart';
-
-import 'package:food_delivery_app/features/home/presentation/views/widgets/rating.dart';
+import 'package:food_delivery_app/features/home/presentation/view/widgets/rating.dart';
 
 import '../../../../../core/widgets/big_text.dart';
 import '../../../../../core/widgets/order_information.dart';

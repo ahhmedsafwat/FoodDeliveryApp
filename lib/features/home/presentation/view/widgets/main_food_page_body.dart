@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/core/utils/dimension.dart';
-import 'package:food_delivery_app/features/home/presentation/views/widgets/popular_text_section.dart';
+import 'package:food_delivery_app/features/home/presentation/view/widgets/popular_text_section.dart';
 import 'custom_app_bar.dart';
 import 'food_cards_pageview.dart';
 import 'food_listview.dart';

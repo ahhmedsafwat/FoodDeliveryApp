@@ -18,7 +18,7 @@ class PopularFoodDetailsBody extends StatelessWidget {
             left: 0,
             right: 0,
             child: AppImage(
-              img: 'assets/image/food3.jpg',
+              img: 'assets/image/food0.png',
               width: double.infinity,
               height: Dimensions.foodDetailsImgSize,
             )),

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery_app/core/api/controllers/popular_product_controller.dart';
 import 'package:food_delivery_app/core/utils/colors.dart';
 import 'package:food_delivery_app/core/utils/dimension.dart';
 import 'package:food_delivery_app/core/widgets/big_text.dart';
 import 'package:food_delivery_app/features/FoodDetails/presentation/view/widgets/app_icon.dart';
+import 'package:get/get.dart';
 
 import 'popular_food_details_bottom_navigation_bar.dart';
 
@@ -15,7 +17,9 @@ class RecommendedBottomNavigationBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(mainAxisSize: MainAxisSize.min, children: [
       Padding(
-        padding: EdgeInsets.symmetric(horizontal: Dimensions.width20 * 2.5),
+        padding: EdgeInsets.symmetric(
+            horizontal: Dimensions.width20 * 2.5,
+            vertical: Dimensions.height10),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [

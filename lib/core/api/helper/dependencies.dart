@@ -5,7 +5,8 @@ import 'package:get/get.dart';
 
 Future<void> init() async {
   // api client
-  Get.lazyPut(() => ApiService(appBaseUrl: 'https://www.dbsetch.com'));
+  Get.lazyPut(
+      () => ApiService(appBaseUrl: 'https://www.dbsetch.com', token: ''));
 
   // repos
   Get.lazyPut(() => PopularProductRepo(apiService: Get.find()));

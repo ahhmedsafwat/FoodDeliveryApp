@@ -17,7 +17,7 @@ class FoodDeliveryApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: PopularFoodDetails(),
+      home: RecommendedFoodDetails(),
     );
   }
 }

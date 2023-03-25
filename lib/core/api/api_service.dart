@@ -6,9 +6,10 @@ class ApiService extends GetConnect implements GetxService {
 
   late Map<String, String> _mainHeaders;
 
-  ApiService({required this.appBaseUrl, required this.token}) {
+  ApiService({required this.appBaseUrl}) {
     baseUrl = appBaseUrl;
     timeout = const Duration(seconds: 30);
+    token = '';
     _mainHeaders = {
       'Content-type': 'application/json; charst=UTF-8',
       'Authorization': 'Bearer $token',
